@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vault-guard-secrets"
+version = "1.0.0"
+description = "High-performance pre-commit cryptographic secret and token leak detector"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Thenuda Sahas", email = "thenudasahas2008@gmail.com" }]
+dependencies = [
+    "pydantic>=2.0.0",
+]
+
+[project.scripts]
+vaultguard = "vaultguard.cli:main"
